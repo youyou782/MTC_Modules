@@ -31,6 +31,6 @@ void Rectangle() {
     std::cin >> width >> height;
     double area = width * height;
     double circumference = 2 * (width + height);
-    std::cout << "Area: "<< area << "Circumference: "<< circumference <<std::endl;
+    std::cout << "Area: "<< area << std::endl << "Circumference: "<< circumference <<std::endl;
 }
 
