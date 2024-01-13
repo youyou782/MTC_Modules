@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "T2_7_Vector_of_strings",
+		"source" : "T2_7_Vector_of_strings"
+	}
+}

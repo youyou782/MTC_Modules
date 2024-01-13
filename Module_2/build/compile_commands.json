@@ -1,0 +1,72 @@
+[
+{
+  "directory": "/home/youyou782/mtc/Module_2/build/T2_5_Bank_account",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_2/T2_5_Bank_account/. -I/home/youyou782/mtc/Module_2/T2_5_Bank_account/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/bank_account.dir/src/bank_account.cpp.o -c /home/youyou782/mtc/Module_2/T2_5_Bank_account/src/bank_account.cpp",
+  "file": "/home/youyou782/mtc/Module_2/T2_5_Bank_account/src/bank_account.cpp"
+},
+{
+  "directory": "/home/youyou782/mtc/Module_2/build/T2_5_Bank_account",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_2/T2_5_Bank_account/. -I/home/youyou782/mtc/Module_2/T2_5_Bank_account/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/bank_account.dir/src/main.cpp.o -c /home/youyou782/mtc/Module_2/T2_5_Bank_account/src/main.cpp",
+  "file": "/home/youyou782/mtc/Module_2/T2_5_Bank_account/src/main.cpp"
+},
+{
+  "directory": "/home/youyou782/mtc/Module_2/build/T2_7_Vector_of_strings",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_2/T2_7_Vector_of_strings/. -I/home/youyou782/mtc/Module_2/T2_7_Vector_of_strings/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/vector_of_strings.dir/src/main.cpp.o -c /home/youyou782/mtc/Module_2/T2_7_Vector_of_strings/src/main.cpp",
+  "file": "/home/youyou782/mtc/Module_2/T2_7_Vector_of_strings/src/main.cpp"
+},
+{
+  "directory": "/home/youyou782/mtc/Module_2/build/T2_7_Vector_of_strings",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_2/T2_7_Vector_of_strings/. -I/home/youyou782/mtc/Module_2/T2_7_Vector_of_strings/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/vector_of_strings.dir/src/vector_strings.cpp.o -c /home/youyou782/mtc/Module_2/T2_7_Vector_of_strings/src/vector_strings.cpp",
+  "file": "/home/youyou782/mtc/Module_2/T2_7_Vector_of_strings/src/vector_strings.cpp"
+},
+{
+  "directory": "/home/youyou782/mtc/Module_2/build/T2_1_First_touch",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_2/T2_1_First_touch/. -I/home/youyou782/mtc/Module_2/T2_1_First_touch/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/first_touch.dir/src/first.cpp.o -c /home/youyou782/mtc/Module_2/T2_1_First_touch/src/first.cpp",
+  "file": "/home/youyou782/mtc/Module_2/T2_1_First_touch/src/first.cpp"
+},
+{
+  "directory": "/home/youyou782/mtc/Module_2/build/T2_1_First_touch",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_2/T2_1_First_touch/. -I/home/youyou782/mtc/Module_2/T2_1_First_touch/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/first_touch.dir/src/main.cpp.o -c /home/youyou782/mtc/Module_2/T2_1_First_touch/src/main.cpp",
+  "file": "/home/youyou782/mtc/Module_2/T2_1_First_touch/src/main.cpp"
+},
+{
+  "directory": "/home/youyou782/mtc/Module_2/build/T2_4_Dog_class",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_2/T2_4_Dog_class/. -I/home/youyou782/mtc/Module_2/T2_4_Dog_class/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/dog_class.dir/src/dog_class.cpp.o -c /home/youyou782/mtc/Module_2/T2_4_Dog_class/src/dog_class.cpp",
+  "file": "/home/youyou782/mtc/Module_2/T2_4_Dog_class/src/dog_class.cpp"
+},
+{
+  "directory": "/home/youyou782/mtc/Module_2/build/T2_4_Dog_class",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_2/T2_4_Dog_class/. -I/home/youyou782/mtc/Module_2/T2_4_Dog_class/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/dog_class.dir/src/main.cpp.o -c /home/youyou782/mtc/Module_2/T2_4_Dog_class/src/main.cpp",
+  "file": "/home/youyou782/mtc/Module_2/T2_4_Dog_class/src/main.cpp"
+},
+{
+  "directory": "/home/youyou782/mtc/Module_2/build/T2_6_Vectors",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_2/T2_6_Vectors/. -I/home/youyou782/mtc/Module_2/T2_6_Vectors/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/vectors.dir/src/main.cpp.o -c /home/youyou782/mtc/Module_2/T2_6_Vectors/src/main.cpp",
+  "file": "/home/youyou782/mtc/Module_2/T2_6_Vectors/src/main.cpp"
+},
+{
+  "directory": "/home/youyou782/mtc/Module_2/build/T2_6_Vectors",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_2/T2_6_Vectors/. -I/home/youyou782/mtc/Module_2/T2_6_Vectors/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/vectors.dir/src/vector.cpp.o -c /home/youyou782/mtc/Module_2/T2_6_Vectors/src/vector.cpp",
+  "file": "/home/youyou782/mtc/Module_2/T2_6_Vectors/src/vector.cpp"
+},
+{
+  "directory": "/home/youyou782/mtc/Module_2/build/T2_3_Simple_class",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_2/T2_3_Simple_class/. -I/home/youyou782/mtc/Module_2/T2_3_Simple_class/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/simple_class.dir/src/main.cpp.o -c /home/youyou782/mtc/Module_2/T2_3_Simple_class/src/main.cpp",
+  "file": "/home/youyou782/mtc/Module_2/T2_3_Simple_class/src/main.cpp"
+},
+{
+  "directory": "/home/youyou782/mtc/Module_2/build/T2_3_Simple_class",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_2/T2_3_Simple_class/. -I/home/youyou782/mtc/Module_2/T2_3_Simple_class/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/simple_class.dir/src/person.cpp.o -c /home/youyou782/mtc/Module_2/T2_3_Simple_class/src/person.cpp",
+  "file": "/home/youyou782/mtc/Module_2/T2_3_Simple_class/src/person.cpp"
+},
+{
+  "directory": "/home/youyou782/mtc/Module_2/build/T2_2_Rectangle",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_2/T2_2_Rectangle/. -I/home/youyou782/mtc/Module_2/T2_2_Rectangle/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/rectangle.dir/src/main.cpp.o -c /home/youyou782/mtc/Module_2/T2_2_Rectangle/src/main.cpp",
+  "file": "/home/youyou782/mtc/Module_2/T2_2_Rectangle/src/main.cpp"
+},
+{
+  "directory": "/home/youyou782/mtc/Module_2/build/T2_2_Rectangle",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_2/T2_2_Rectangle/. -I/home/youyou782/mtc/Module_2/T2_2_Rectangle/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/rectangle.dir/src/rectangle.cpp.o -c /home/youyou782/mtc/Module_2/T2_2_Rectangle/src/rectangle.cpp",
+  "file": "/home/youyou782/mtc/Module_2/T2_2_Rectangle/src/rectangle.cpp"
+}
+]

@@ -1,0 +1,303 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "T2_5_Bank_account",
+					"jsonFile" : "directory-T2_5_Bank_account-Debug-32e57620532c8b6db2cb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "T2_5_Bank_account",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "T2_7_Vector_of_strings",
+					"jsonFile" : "directory-T2_7_Vector_of_strings-Debug-fd6f2e8af1db4717acff.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "T2_7_Vector_of_strings",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "T2_1_First_touch",
+					"jsonFile" : "directory-T2_1_First_touch-Debug-33c1109cd8da9971ecfe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "T2_1_First_touch",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "T2_4_Dog_class",
+					"jsonFile" : "directory-T2_4_Dog_class-Debug-6ae13e1a2b5ef42babbc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "T2_4_Dog_class",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "T2_6_Vectors",
+					"jsonFile" : "directory-T2_6_Vectors-Debug-ae85f522dbb8441da11d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 5,
+					"source" : "T2_6_Vectors",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "T2_3_Simple_class",
+					"jsonFile" : "directory-T2_3_Simple_class-Debug-6fa46d451bd25d8493fa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 6,
+					"source" : "T2_3_Simple_class",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "T2_2_Rectangle",
+					"jsonFile" : "directory-T2_2_Rectangle-Debug-37dcc32e33561a8bc0ff.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 7,
+					"source" : "T2_2_Rectangle",
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Module_2"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "bank_account",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "vector_of_strings",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "first_touch",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "dog_class",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "vectors",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "simple_class",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "rectangle",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "bank_account::@eecc1ae7c2f408d4e7b7",
+					"jsonFile" : "target-bank_account-Debug-e1ee6031fd395f84d9e3.json",
+					"name" : "bank_account",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "dog_class::@86bc071217b3bfca5d53",
+					"jsonFile" : "target-dog_class-Debug-13f47baf1c70260ca4f7.json",
+					"name" : "dog_class",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "first_touch::@2b6484f0775ed8edeecc",
+					"jsonFile" : "target-first_touch-Debug-8c0f5b2008264433820b.json",
+					"name" : "first_touch",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "rectangle::@ef50a8350997f010ccaf",
+					"jsonFile" : "target-rectangle-Debug-400af14417e18944eeb8.json",
+					"name" : "rectangle",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "simple_class::@47090cc1ca3ec00d736a",
+					"jsonFile" : "target-simple_class-Debug-025009c2ab8df34281c8.json",
+					"name" : "simple_class",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "vector_of_strings::@bf871d809a45682bfd95",
+					"jsonFile" : "target-vector_of_strings-Debug-203afa3a86f5e30f48f6.json",
+					"name" : "vector_of_strings",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "vectors::@984d9830278c28654e25",
+					"jsonFile" : "target-vectors-Debug-0afe8a948456e4dfa961.json",
+					"name" : "vectors",
+					"projectIndex" : 5
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/youyou782/mtc/Module_2/build",
+		"source" : "/home/youyou782/mtc/Module_2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
