@@ -6,6 +6,7 @@
 
 std::istream& GetLines(std::istream& is, std::list<std::string>& list) {
     std::string temp;
+    list.clear();
     while(std::getline(is, temp)){
         if(temp.back() == '\n'){
             temp.pop_back();
