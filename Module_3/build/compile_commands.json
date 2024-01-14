@@ -1,0 +1,62 @@
+[
+{
+  "directory": "/home/youyou782/mtc/Module_3/build/T3_2_List",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_3/T3_2_List/. -I/home/youyou782/mtc/Module_3/T3_2_List/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/list.dir/src/list.cpp.o -c /home/youyou782/mtc/Module_3/T3_2_List/src/list.cpp",
+  "file": "/home/youyou782/mtc/Module_3/T3_2_List/src/list.cpp"
+},
+{
+  "directory": "/home/youyou782/mtc/Module_3/build/T3_2_List",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_3/T3_2_List/. -I/home/youyou782/mtc/Module_3/T3_2_List/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/list.dir/src/main.cpp.o -c /home/youyou782/mtc/Module_3/T3_2_List/src/main.cpp",
+  "file": "/home/youyou782/mtc/Module_3/T3_2_List/src/main.cpp"
+},
+{
+  "directory": "/home/youyou782/mtc/Module_3/build/T3_5_Pokemon",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_3/T3_5_Pokemon/. -I/home/youyou782/mtc/Module_3/T3_5_Pokemon/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/pokemon.dir/src/main.cpp.o -c /home/youyou782/mtc/Module_3/T3_5_Pokemon/src/main.cpp",
+  "file": "/home/youyou782/mtc/Module_3/T3_5_Pokemon/src/main.cpp"
+},
+{
+  "directory": "/home/youyou782/mtc/Module_3/build/T3_5_Pokemon",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_3/T3_5_Pokemon/. -I/home/youyou782/mtc/Module_3/T3_5_Pokemon/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/pokemon.dir/src/pokemon.cpp.o -c /home/youyou782/mtc/Module_3/T3_5_Pokemon/src/pokemon.cpp",
+  "file": "/home/youyou782/mtc/Module_3/T3_5_Pokemon/src/pokemon.cpp"
+},
+{
+  "directory": "/home/youyou782/mtc/Module_3/build/T3_1_Vector_iterators",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_3/T3_1_Vector_iterators/. -I/home/youyou782/mtc/Module_3/T3_1_Vector_iterators/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/vector_iterators.dir/src/main.cpp.o -c /home/youyou782/mtc/Module_3/T3_1_Vector_iterators/src/main.cpp",
+  "file": "/home/youyou782/mtc/Module_3/T3_1_Vector_iterators/src/main.cpp"
+},
+{
+  "directory": "/home/youyou782/mtc/Module_3/build/T3_1_Vector_iterators",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_3/T3_1_Vector_iterators/. -I/home/youyou782/mtc/Module_3/T3_1_Vector_iterators/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/vector_iterators.dir/src/vector_it.cpp.o -c /home/youyou782/mtc/Module_3/T3_1_Vector_iterators/src/vector_it.cpp",
+  "file": "/home/youyou782/mtc/Module_3/T3_1_Vector_iterators/src/vector_it.cpp"
+},
+{
+  "directory": "/home/youyou782/mtc/Module_3/build/T3_3_Matrix_rotation",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_3/T3_3_Matrix_rotation/. -I/home/youyou782/mtc/Module_3/T3_3_Matrix_rotation/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/matrix_rotation.dir/src/main.cpp.o -c /home/youyou782/mtc/Module_3/T3_3_Matrix_rotation/src/main.cpp",
+  "file": "/home/youyou782/mtc/Module_3/T3_3_Matrix_rotation/src/main.cpp"
+},
+{
+  "directory": "/home/youyou782/mtc/Module_3/build/T3_3_Matrix_rotation",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_3/T3_3_Matrix_rotation/. -I/home/youyou782/mtc/Module_3/T3_3_Matrix_rotation/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/matrix_rotation.dir/src/matrix.cpp.o -c /home/youyou782/mtc/Module_3/T3_3_Matrix_rotation/src/matrix.cpp",
+  "file": "/home/youyou782/mtc/Module_3/T3_3_Matrix_rotation/src/matrix.cpp"
+},
+{
+  "directory": "/home/youyou782/mtc/Module_3/build/T3_4_Library",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_3/T3_4_Library/. -I/home/youyou782/mtc/Module_3/T3_4_Library/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/library.dir/src/book.cpp.o -c /home/youyou782/mtc/Module_3/T3_4_Library/src/book.cpp",
+  "file": "/home/youyou782/mtc/Module_3/T3_4_Library/src/book.cpp"
+},
+{
+  "directory": "/home/youyou782/mtc/Module_3/build/T3_4_Library",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_3/T3_4_Library/. -I/home/youyou782/mtc/Module_3/T3_4_Library/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/library.dir/src/customer.cpp.o -c /home/youyou782/mtc/Module_3/T3_4_Library/src/customer.cpp",
+  "file": "/home/youyou782/mtc/Module_3/T3_4_Library/src/customer.cpp"
+},
+{
+  "directory": "/home/youyou782/mtc/Module_3/build/T3_4_Library",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_3/T3_4_Library/. -I/home/youyou782/mtc/Module_3/T3_4_Library/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/library.dir/src/library.cpp.o -c /home/youyou782/mtc/Module_3/T3_4_Library/src/library.cpp",
+  "file": "/home/youyou782/mtc/Module_3/T3_4_Library/src/library.cpp"
+},
+{
+  "directory": "/home/youyou782/mtc/Module_3/build/T3_4_Library",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_3/T3_4_Library/. -I/home/youyou782/mtc/Module_3/T3_4_Library/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/library.dir/src/main.cpp.o -c /home/youyou782/mtc/Module_3/T3_4_Library/src/main.cpp",
+  "file": "/home/youyou782/mtc/Module_3/T3_4_Library/src/main.cpp"
+}
+]

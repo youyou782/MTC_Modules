@@ -1,0 +1,231 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "T3_2_List",
+					"jsonFile" : "directory-T3_2_List-Debug-94e7a2bb30d761059a0d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "T3_2_List",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "T3_5_Pokemon",
+					"jsonFile" : "directory-T3_5_Pokemon-Debug-dac0ed7d5baa6b9ac2de.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "T3_5_Pokemon",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "T3_1_Vector_iterators",
+					"jsonFile" : "directory-T3_1_Vector_iterators-Debug-ed0e36fabf5cdaf9bf68.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "T3_1_Vector_iterators",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "T3_3_Matrix_rotation",
+					"jsonFile" : "directory-T3_3_Matrix_rotation-Debug-f05aecb74cda8324989e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "T3_3_Matrix_rotation",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "T3_4_Library",
+					"jsonFile" : "directory-T3_4_Library-Debug-b4aa0f0d4c293e79766a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 5,
+					"source" : "T3_4_Library",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Module_3"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "list",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "pokemon",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "vector_iterators",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "matrix_rotation",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "library",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 5,
+					"id" : "library::@b227950dfd216e5896d4",
+					"jsonFile" : "target-library-Debug-a5fb7a5f13250702fe3c.json",
+					"name" : "library",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "list::@7ceae300f3ee3d07d320",
+					"jsonFile" : "target-list-Debug-7c29ba7756dac08a3dae.json",
+					"name" : "list",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "matrix_rotation::@5c7d096d85103518338a",
+					"jsonFile" : "target-matrix_rotation-Debug-f55331eb30e893d8d81e.json",
+					"name" : "matrix_rotation",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "pokemon::@40e680ecae4b8e21a0fa",
+					"jsonFile" : "target-pokemon-Debug-9272b2e532b429581232.json",
+					"name" : "pokemon",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "vector_iterators::@10def494bdaf94ccc420",
+					"jsonFile" : "target-vector_iterators-Debug-8ef93387be019643298b.json",
+					"name" : "vector_iterators",
+					"projectIndex" : 3
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/youyou782/mtc/Module_3/build",
+		"source" : "/home/youyou782/mtc/Module_3"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
