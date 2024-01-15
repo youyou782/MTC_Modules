@@ -9,7 +9,7 @@
 Library::Library(const std::string& name): name_(name){
 }
 
-std::string Library::GetName(){
+std::string Library::GetName() const{
     return name_;
 }
 

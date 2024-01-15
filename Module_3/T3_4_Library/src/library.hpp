@@ -26,7 +26,7 @@ class Library {
    *
    * \return std::string
    */
-  std::string GetName();
+  std::string GetName() const;
 
   /**
    * \brief Get the Library's books as a reference to a vector<Book>, takes no

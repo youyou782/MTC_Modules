@@ -16,23 +16,23 @@ Date due_date) :
     due_date_(due_date){
 }
 
-std::string Book::GetName(){
+std::string Book::GetName() const{
     return name_;
 }
 
-std::string Book::GetAuthor(){
+std::string Book::GetAuthor() const{
     return author_;
 }
 
-std::string Book::GetISBN(){
+std::string Book::GetISBN() const{
     return isbn_;
 }
 
-bool Book::GetStatus(){
+bool Book::GetStatus() const{
     return loaned_;
 }
 
-Date Book::GetDueDate(){
+Date Book::GetDueDate() const{
     return due_date_;
 }
 
@@ -60,7 +60,7 @@ void Book::Restore(){
     loaned_ = false;
 }
 
-void Book::Print(){
+void Book::Print() const{
     std::cout << "Book: " << name_ <<", author: " << author_ << ", ISBN: " << isbn_ << ", loaned " 
     << (loaned_ ? "true" : "false") << ", due date: "<< due_date_.day << "." << due_date_.month << "." << due_date_.year << std::endl;
 }

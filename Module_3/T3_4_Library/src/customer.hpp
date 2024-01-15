@@ -26,7 +26,7 @@ class Customer {
    *
    * \return std::string
    */
-  std::string GetName();
+  std::string GetName() const;
 
   /**
    * \brief Get the Customer's customer number as a string, takes no
@@ -39,7 +39,7 @@ class Customer {
    *
    * \return std::string
    */
-  std::string GetID(); 
+  std::string GetID() const; 
 
   /**
    * \brief Get the Customer's number of loans as an int, takes no parameters.
@@ -51,7 +51,7 @@ class Customer {
    *
    * \return int
    */
-  int GetLoanAmount();
+  int GetLoanAmount() const;
 
   /**
    * \brief Get the Customer's loans as a vector<Book>, takes no parameters.
@@ -107,7 +107,7 @@ class Customer {
    *
    * (Book details must be printed on a single line)
    */
-  void Print();
+  void Print() const;
 
  private:
   /* Member variables:

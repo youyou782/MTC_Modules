@@ -61,7 +61,7 @@ class Book {
    *
    * \return the Book's name as a std::string
    */
-  std::string GetName();
+  std::string GetName() const;
 
   /**
    * \brief Get the Book's author as a string, takes no parameters.
@@ -73,7 +73,7 @@ class Book {
    *
    * \return std::string
    */
-  std::string GetAuthor();
+  std::string GetAuthor() const;
 
   /**
    * \brief Get the Book's ISBN as a string, takes no parameters.
@@ -86,7 +86,7 @@ class Book {
    * \return std::string
    */
   
-  std::string GetISBN();
+  std::string GetISBN() const;
   /**
    * \brief Get the Book's status as a bool, takes no parameters.
    *
@@ -98,7 +98,7 @@ class Book {
    * \return true if the book is loaned
    * \return false otherwise
    */
-  bool GetStatus();
+  bool GetStatus() const;
 
   /**
    * \brief Get the Book's due date, takes no parameters.
@@ -110,7 +110,7 @@ class Book {
    *
    * \return Date
    */
-  Date GetDueDate();
+  Date GetDueDate() const;
 
   /**
    * \brief Loans the book
@@ -159,7 +159,7 @@ class Book {
    *
    * Function identifier: Print
    */
-  void Print();
+  void Print() const;
 
  private:
   std::string name_;

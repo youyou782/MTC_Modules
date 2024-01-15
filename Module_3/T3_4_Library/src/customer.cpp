@@ -6,15 +6,15 @@ Customer::Customer(const std::string& name, const std::string& id):
     name_(name), id_(id){
     }
 
-std::string Customer::GetName(){
+std::string Customer::GetName() const{
     return name_;
 }
 
-std::string Customer::GetID(){
+std::string Customer::GetID() const{
     return id_;
 }
 
-int Customer::GetLoanAmount(){
+int Customer::GetLoanAmount() const{
     return book_.size();
 }
 
@@ -44,10 +44,10 @@ void Customer::ReturnBook(Book& b){
     }
 }
 
-void Customer::Print(){
+void Customer::Print() const{
     std::cout << "Customer: " << name_ << ", " << id_ << ", has " << GetLoanAmount() <<  " books on loan:" << std::endl;
 
-    for(std::vector<Book>::iterator i = book_.begin(); i!= book_.end(); i++){
+    for(std::vector<Book>::const_iterator i = book_.begin(); i!= book_.end(); i++){
         
         std::cout << "- Book: " << i->GetName() << ", author: " << i->GetAuthor() << ", ISBN: " <<
         i->GetISBN() << ", loaned " << (i->GetStatus() ? "true" : "false") << ", duedate: " << i->GetDueDate().day <<
