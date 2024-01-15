@@ -5,7 +5,6 @@
 #include <list>
 #include <string>
 #include <utility>
-#include <algorithm>
 
 class PokemonCollection
 {

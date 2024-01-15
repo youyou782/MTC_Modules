@@ -1,5 +1,5 @@
 #include "pokemon.hpp"
-
+#include <algorithm>
 
 void PokemonCollection::Add(const std::string &name, size_t id){
     std::pair<std::string, std::size_t> new_pokemon = std::pair<std::string, std::size_t>(name, id);
