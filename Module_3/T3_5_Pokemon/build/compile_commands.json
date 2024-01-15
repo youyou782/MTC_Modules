@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/youyou782/mtc/Module_3/T3_5_Pokemon/build",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_3/T3_5_Pokemon/. -I/home/youyou782/mtc/Module_3/T3_5_Pokemon/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/pokemon.dir/src/main.cpp.o -c /home/youyou782/mtc/Module_3/T3_5_Pokemon/src/main.cpp",
+  "file": "/home/youyou782/mtc/Module_3/T3_5_Pokemon/src/main.cpp"
+},
+{
+  "directory": "/home/youyou782/mtc/Module_3/T3_5_Pokemon/build",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_3/T3_5_Pokemon/. -I/home/youyou782/mtc/Module_3/T3_5_Pokemon/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/pokemon.dir/src/pokemon.cpp.o -c /home/youyou782/mtc/Module_3/T3_5_Pokemon/src/pokemon.cpp",
+  "file": "/home/youyou782/mtc/Module_3/T3_5_Pokemon/src/pokemon.cpp"
+}
+]
