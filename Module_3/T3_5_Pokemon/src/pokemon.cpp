@@ -17,7 +17,7 @@ bool PokemonCollection::Remove(const std::string &name, size_t id){
 }
 void PokemonCollection::Print() const{
     for(auto i = pokemons_.cbegin(); i != pokemons_.cend(); i++){
-        std::cout << "id: " << i->second << ". name: " << i->first << std::endl;
+        std::cout << "id: " << i->second << ", name: " << i->first << std::endl;
     }
 }
 
