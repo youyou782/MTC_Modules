@@ -35,6 +35,7 @@ struct Date {
   }
 };
 
+const Date defaultDate = {0, 0, 0};
 class Book {
  public:
   /**
@@ -48,7 +49,7 @@ class Book {
    * \param due_date due date as a Date structure (Date), which is by default
    *                  0-0-0
    */
-  
+  Book(const std::string& name, const std::string& author, const std::string& isbn, bool loaned = false, Date due_date = defaultDate);
 
   /**
    * \brief Get the Name of the book. It has no parameters.
@@ -60,7 +61,7 @@ class Book {
    *
    * \return the Book's name as a std::string
    */
-  
+  std::string GetName();
 
   /**
    * \brief Get the Book's author as a string, takes no parameters.
@@ -72,7 +73,7 @@ class Book {
    *
    * \return std::string
    */
-  
+  std::string GetAuthor();
 
   /**
    * \brief Get the Book's ISBN as a string, takes no parameters.
@@ -85,7 +86,7 @@ class Book {
    * \return std::string
    */
   
-
+  std::string GetISBN();
   /**
    * \brief Get the Book's status as a bool, takes no parameters.
    *
@@ -97,7 +98,7 @@ class Book {
    * \return true if the book is loaned
    * \return false otherwise
    */
-  
+  bool GetStatus();
 
   /**
    * \brief Get the Book's due date, takes no parameters.
@@ -109,7 +110,7 @@ class Book {
    *
    * \return Date
    */
-  
+  Date GetDueDate();
 
   /**
    * \brief Loans the book
@@ -129,7 +130,7 @@ class Book {
    * \return true if loaning is successful
    * \return false otherwise.
    */
-  
+  bool Loan();
 
   /**
    * \brief Restores the book status to not loaned
@@ -140,7 +141,7 @@ class Book {
    *
    * Function identifier: Restore
    */
-  
+  void Restore();
 
   /**
    * \brief Prints the book's information to the standard output stream.
@@ -158,7 +159,7 @@ class Book {
    *
    * Function identifier: Print
    */
-  
+  void Print();
 
  private:
   std::string name_;
