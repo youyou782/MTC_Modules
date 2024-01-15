@@ -50,7 +50,7 @@ void Customer::Print() const{
     for(std::vector<Book>::const_iterator i = book_.begin(); i!= book_.end(); i++){
         
         std::cout << "- Book: " << i->GetName() << ", author: " << i->GetAuthor() << ", ISBN: " <<
-        i->GetISBN() << ", loaned " << (i->GetStatus() ? "true" : "false") << ", duedate: " << i->GetDueDate().day <<
+        i->GetISBN() << ", loaned " << (i->GetStatus() ? "true" : "false") << ", due date: " << i->GetDueDate().day <<
         "." << i->GetDueDate().month << "." << i->GetDueDate().year << std::endl; 
         
     }
