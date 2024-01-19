@@ -35,7 +35,7 @@ class GeomVector {
 
   bool operator!=(const GeomVector& a);
   
-  friend GeomVector operator/(const GeomVector&a, int b);
+  friend GeomVector operator/(const GeomVector&a, double b);
   /**
    * \brief Overload operator for the scalar multiplication of a GeomVector
    * object (not to be confused with dot product).

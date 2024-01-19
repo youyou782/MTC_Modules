@@ -36,8 +36,8 @@ bool GeomVector::operator!=(const GeomVector&a){
     return !(x_ == a.x_ && y_ == a.y_ && z_ == a.z_);
 }
 
-GeomVector operator/(const GeomVector&a, int b){
-    GeomVector c = GeomVector(0,0,0);
+GeomVector operator/(const GeomVector&a, double b){
+    GeomVector c(0,0,0);
     c.x_ = a.x_/b;
     c.y_ = a.y_/b;
     c.z_ = a.z_/b;
