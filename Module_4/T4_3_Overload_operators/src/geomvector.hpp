@@ -27,8 +27,15 @@ class GeomVector {
   GeomVector operator+(const GeomVector& a);
 
   // Define the remaining operators here
-  
+  bool operator<(const GeomVector& a);
 
+  bool operator>(const GeomVector& a);
+
+  bool operator==(const GeomVector& a);
+
+  bool operator!=(const GeomVector& a);
+  
+  friend GeomVector operator/(const GeomVector&a, int b);
   /**
    * \brief Overload operator for the scalar multiplication of a GeomVector
    * object (not to be confused with dot product).

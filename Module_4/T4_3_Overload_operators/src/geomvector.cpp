@@ -19,3 +19,27 @@ std::ostream &operator<<(std::ostream& out, const GeomVector& a) {
 double GeomVector::Length() const {
     return sqrt(pow(x_, 2) + pow(y_, 2) + pow(z_, 2));
 }
+
+bool GeomVector::operator<(const GeomVector&a){
+    return (x_ * x_ + y_ * y_ + z_ * z_ ) < (a.x_ * a.x_ + a.y_ * a.y_ + a.z_ * a.z_ );
+}
+
+bool GeomVector::operator>(const GeomVector&a){
+    return (x_ * x_ + y_ * y_ + z_ * z_ ) > (a.x_ * a.x_ + a.y_ * a.y_ + a.z_ * a.z_ );
+}
+
+bool GeomVector::operator==(const GeomVector&a){
+    return (x_ == a.x_ && y_ == a.y_ && z_ == a.z_);
+}
+
+bool GeomVector::operator!=(const GeomVector&a){
+    return !(x_ == a.x_ && y_ == a.y_ && z_ == a.z_);
+}
+
+GeomVector operator/(const GeomVector&a, int b){
+    GeomVector c = GeomVector(0,0,0);
+    c.x_ = a.x_/b;
+    c.y_ = a.y_/b;
+    c.z_ = a.z_/b;
+    return c;
+}
