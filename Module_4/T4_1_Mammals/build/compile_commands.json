@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/youyou782/mtc/Module_4/T4_1_Mammals/build",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_4/T4_1_Mammals/. -I/home/youyou782/mtc/Module_4/T4_1_Mammals/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/mammals.dir/src/cat.cpp.o -c /home/youyou782/mtc/Module_4/T4_1_Mammals/src/cat.cpp",
+  "file": "/home/youyou782/mtc/Module_4/T4_1_Mammals/src/cat.cpp"
+},
+{
+  "directory": "/home/youyou782/mtc/Module_4/T4_1_Mammals/build",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_4/T4_1_Mammals/. -I/home/youyou782/mtc/Module_4/T4_1_Mammals/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/mammals.dir/src/dog.cpp.o -c /home/youyou782/mtc/Module_4/T4_1_Mammals/src/dog.cpp",
+  "file": "/home/youyou782/mtc/Module_4/T4_1_Mammals/src/dog.cpp"
+},
+{
+  "directory": "/home/youyou782/mtc/Module_4/T4_1_Mammals/build",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_4/T4_1_Mammals/. -I/home/youyou782/mtc/Module_4/T4_1_Mammals/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/mammals.dir/src/main.cpp.o -c /home/youyou782/mtc/Module_4/T4_1_Mammals/src/main.cpp",
+  "file": "/home/youyou782/mtc/Module_4/T4_1_Mammals/src/main.cpp"
+},
+{
+  "directory": "/home/youyou782/mtc/Module_4/T4_1_Mammals/build",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_4/T4_1_Mammals/. -I/home/youyou782/mtc/Module_4/T4_1_Mammals/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/mammals.dir/src/mammal.cpp.o -c /home/youyou782/mtc/Module_4/T4_1_Mammals/src/mammal.cpp",
+  "file": "/home/youyou782/mtc/Module_4/T4_1_Mammals/src/mammal.cpp"
+}
+]

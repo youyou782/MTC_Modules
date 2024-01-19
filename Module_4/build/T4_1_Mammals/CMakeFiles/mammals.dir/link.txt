@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/mammals.dir/src/cat.cpp.o CMakeFiles/mammals.dir/src/dog.cpp.o CMakeFiles/mammals.dir/src/main.cpp.o CMakeFiles/mammals.dir/src/mammal.cpp.o -o mammals 

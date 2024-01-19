@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/birds.dir/src/aviary.cpp.o CMakeFiles/birds.dir/src/main.cpp.o -o birds 

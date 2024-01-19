@@ -1,0 +1,17 @@
+/home/youyou782/mtc/Module_4/build/CMakeFiles/edit_cache.dir
+/home/youyou782/mtc/Module_4/build/CMakeFiles/rebuild_cache.dir
+/home/youyou782/mtc/Module_4/build/T4_1_Mammals/CMakeFiles/mammals.dir
+/home/youyou782/mtc/Module_4/build/T4_1_Mammals/CMakeFiles/edit_cache.dir
+/home/youyou782/mtc/Module_4/build/T4_1_Mammals/CMakeFiles/rebuild_cache.dir
+/home/youyou782/mtc/Module_4/build/T4_3_Overload_operators/CMakeFiles/overload_operators.dir
+/home/youyou782/mtc/Module_4/build/T4_3_Overload_operators/CMakeFiles/edit_cache.dir
+/home/youyou782/mtc/Module_4/build/T4_3_Overload_operators/CMakeFiles/rebuild_cache.dir
+/home/youyou782/mtc/Module_4/build/T4_5_Dragons/CMakeFiles/dragons.dir
+/home/youyou782/mtc/Module_4/build/T4_5_Dragons/CMakeFiles/edit_cache.dir
+/home/youyou782/mtc/Module_4/build/T4_5_Dragons/CMakeFiles/rebuild_cache.dir
+/home/youyou782/mtc/Module_4/build/T4_4_Birds/CMakeFiles/birds.dir
+/home/youyou782/mtc/Module_4/build/T4_4_Birds/CMakeFiles/edit_cache.dir
+/home/youyou782/mtc/Module_4/build/T4_4_Birds/CMakeFiles/rebuild_cache.dir
+/home/youyou782/mtc/Module_4/build/T4_2_Trolls_and_dragons/CMakeFiles/trolls_and_dragons.dir
+/home/youyou782/mtc/Module_4/build/T4_2_Trolls_and_dragons/CMakeFiles/edit_cache.dir
+/home/youyou782/mtc/Module_4/build/T4_2_Trolls_and_dragons/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,231 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "T4_1_Mammals",
+					"jsonFile" : "directory-T4_1_Mammals-Debug-0780b2c462e0d2f87be4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "T4_1_Mammals",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "T4_3_Overload_operators",
+					"jsonFile" : "directory-T4_3_Overload_operators-Debug-ed85306c03d0587e1b5d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "T4_3_Overload_operators",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "T4_5_Dragons",
+					"jsonFile" : "directory-T4_5_Dragons-Debug-787cd68fc90af48e81c0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "T4_5_Dragons",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "T4_4_Birds",
+					"jsonFile" : "directory-T4_4_Birds-Debug-ee3a998844cb74470752.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "T4_4_Birds",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "T4_2_Trolls_and_dragons",
+					"jsonFile" : "directory-T4_2_Trolls_and_dragons-Debug-e1bb477129d1bf062f6c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 5,
+					"source" : "T4_2_Trolls_and_dragons",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Module_4"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "mammals",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "overload_operators",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "dragons",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "birds",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "trolls_and_dragons",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 4,
+					"id" : "birds::@d9ca32ab4780a7587074",
+					"jsonFile" : "target-birds-Debug-aee5e95dfb8ac9d2d391.json",
+					"name" : "birds",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "dragons::@c20ee81e490d43354e2c",
+					"jsonFile" : "target-dragons-Debug-4671ef569cfae3c2050f.json",
+					"name" : "dragons",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "mammals::@3a804dc374e607638e65",
+					"jsonFile" : "target-mammals-Debug-7da8f4a1cfdfd2119e78.json",
+					"name" : "mammals",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "overload_operators::@2739dc1a15a3d5901be5",
+					"jsonFile" : "target-overload_operators-Debug-b84b9bbd89834206a585.json",
+					"name" : "overload_operators",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "trolls_and_dragons::@22f26e31fb92d8b29005",
+					"jsonFile" : "target-trolls_and_dragons-Debug-8c8a2616cfa63b79f540.json",
+					"name" : "trolls_and_dragons",
+					"projectIndex" : 5
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/youyou782/mtc/Module_4/build",
+		"source" : "/home/youyou782/mtc/Module_4"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
