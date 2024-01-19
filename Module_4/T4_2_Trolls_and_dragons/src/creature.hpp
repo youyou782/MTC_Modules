@@ -40,6 +40,12 @@ class Creature {
    */
   int GetHitPoints() const;
 
+  /**
+   * @brief overloading of <<
+   * 
+   */
+  friend std::ostream& operator<<(std::ostream& out, const Creature& a);
+
  private:
   std::string name_;
   const std::string type_;

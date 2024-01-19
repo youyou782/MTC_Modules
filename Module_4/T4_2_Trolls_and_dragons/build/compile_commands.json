@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/youyou782/mtc/Module_4/T4_2_Trolls_and_dragons/build",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_4/T4_2_Trolls_and_dragons/. -I/home/youyou782/mtc/Module_4/T4_2_Trolls_and_dragons/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/trolls_and_dragons.dir/src/creature.cpp.o -c /home/youyou782/mtc/Module_4/T4_2_Trolls_and_dragons/src/creature.cpp",
+  "file": "/home/youyou782/mtc/Module_4/T4_2_Trolls_and_dragons/src/creature.cpp"
+},
+{
+  "directory": "/home/youyou782/mtc/Module_4/T4_2_Trolls_and_dragons/build",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_4/T4_2_Trolls_and_dragons/. -I/home/youyou782/mtc/Module_4/T4_2_Trolls_and_dragons/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/trolls_and_dragons.dir/src/dragon.cpp.o -c /home/youyou782/mtc/Module_4/T4_2_Trolls_and_dragons/src/dragon.cpp",
+  "file": "/home/youyou782/mtc/Module_4/T4_2_Trolls_and_dragons/src/dragon.cpp"
+},
+{
+  "directory": "/home/youyou782/mtc/Module_4/T4_2_Trolls_and_dragons/build",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_4/T4_2_Trolls_and_dragons/. -I/home/youyou782/mtc/Module_4/T4_2_Trolls_and_dragons/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/trolls_and_dragons.dir/src/main.cpp.o -c /home/youyou782/mtc/Module_4/T4_2_Trolls_and_dragons/src/main.cpp",
+  "file": "/home/youyou782/mtc/Module_4/T4_2_Trolls_and_dragons/src/main.cpp"
+},
+{
+  "directory": "/home/youyou782/mtc/Module_4/T4_2_Trolls_and_dragons/build",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_4/T4_2_Trolls_and_dragons/. -I/home/youyou782/mtc/Module_4/T4_2_Trolls_and_dragons/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/trolls_and_dragons.dir/src/troll.cpp.o -c /home/youyou782/mtc/Module_4/T4_2_Trolls_and_dragons/src/troll.cpp",
+  "file": "/home/youyou782/mtc/Module_4/T4_2_Trolls_and_dragons/src/troll.cpp"
+}
+]
