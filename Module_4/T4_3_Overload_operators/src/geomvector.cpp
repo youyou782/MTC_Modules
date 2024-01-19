@@ -21,11 +21,11 @@ double GeomVector::Length() const {
 }
 
 bool GeomVector::operator<(const GeomVector&a){
-    return (x_ * x_ + y_ * y_ + z_ * z_ ) < (a.x_ * a.x_ + a.y_ * a.y_ + a.z_ * a.z_ );
+    return this->Length() < a.Length();
 }
 
 bool GeomVector::operator>(const GeomVector&a){
-    return (x_ * x_ + y_ * y_ + z_ * z_ ) > (a.x_ * a.x_ + a.y_ * a.y_ + a.z_ * a.z_ );
+    return this->Length() > a.Length();
 }
 
 bool GeomVector::operator==(const GeomVector&a){
