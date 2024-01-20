@@ -36,7 +36,9 @@ std::ostream& operator<<(std::ostream& os, const DragonCave& cave){
     for(auto i = cave.GetDragons().cbegin(); i != cave.GetDragons().cend(); i++){
 
         os << **i ;
-        if( i++ != cave.GetDragons().end()){
+        auto next_i = i;
+        next_i++;
+        if( next_i != cave.GetDragons().end()){
             os << std::endl;
         }
     }
