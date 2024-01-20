@@ -18,12 +18,15 @@ void MagicDragon::Eat(std::list<Food> &food)
 void MagicDragon::Hoard(std::list<Treasure> &treasure)
 {
     if(!treasure.empty()){
-        for(auto i = treasure.begin(); i != treasure.end(); i++){
+        for(auto i = treasure.begin(); i != treasure.end(); ){
             if(i->type == Potions){
                 std::cout << "Magic dragon received: " << i->name << std::endl;
                 treasure_.push_back(*i);
                 i = treasure.erase(i);
                 //break;
+            }
+            else{
+                i++;
             }
         }
     }

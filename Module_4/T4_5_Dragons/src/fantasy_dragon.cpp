@@ -19,12 +19,15 @@ void FantasyDragon::Eat(std::list<Food> &food)
 void FantasyDragon::Hoard(std::list<Treasure> &treasure)
 {
     if(!treasure.empty()){
-        for(auto i = treasure.begin(); i != treasure.end(); i++){
+        for(auto i = treasure.begin(); i != treasure.end(); ){
             if(i->type == Jewellery){
                 std::cout << "Fantasy dragon received: " << i->name << std::endl;
                 treasure_.push_back(*i);
                 i = treasure.erase(i);
                 //break;
+            }
+            else{
+                i++;
             }
         }
     }
