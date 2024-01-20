@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/youyou782/mtc/Module_4/T4_4_Birds/build",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_4/T4_4_Birds/. -I/home/youyou782/mtc/Module_4/T4_4_Birds/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/birds.dir/src/aviary.cpp.o -c /home/youyou782/mtc/Module_4/T4_4_Birds/src/aviary.cpp",
+  "file": "/home/youyou782/mtc/Module_4/T4_4_Birds/src/aviary.cpp"
+},
+{
+  "directory": "/home/youyou782/mtc/Module_4/T4_4_Birds/build",
+  "command": "/usr/bin/g++  -I/home/youyou782/mtc/Module_4/T4_4_Birds/. -I/home/youyou782/mtc/Module_4/T4_4_Birds/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/birds.dir/src/main.cpp.o -c /home/youyou782/mtc/Module_4/T4_4_Birds/src/main.cpp",
+  "file": "/home/youyou782/mtc/Module_4/T4_4_Birds/src/main.cpp"
+}
+]
