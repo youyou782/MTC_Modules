@@ -35,7 +35,7 @@ std::ostream& operator<<(std::ostream& os, const DragonCave& cave){
 
     for(auto i : cave.GetDragons()){
 
-        os << i << std::endl;
+        os << *i << std::endl;
 
     }
     return os;
