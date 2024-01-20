@@ -16,14 +16,14 @@ void Aviary::SpeakAll(std::ostream &os) const{
     }
 }
 
-int Aviary::Size() const{
+size_t Aviary::Size() const{
 
     return bird_.size();
 }
 
 Bird *Aviary::operator[](size_t idx)
 {
-    if(static_cast<int>(idx) < Size()){
+    if(idx < Size()){
         return bird_[idx];
     }
     else{
@@ -33,7 +33,7 @@ Bird *Aviary::operator[](size_t idx)
 
 const Bird *Aviary::operator[](size_t idx) const
 {
-    if(static_cast<int>(idx) < Size()){
+    if(idx < Size()){
         return bird_[idx];
     }
     else{

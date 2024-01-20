@@ -48,7 +48,7 @@ class Aviary {
    *
    * \return How many birds there are in the aviary.
    */
-  int Size() const;
+  size_t Size() const;
   /**
    * \brief TODO: non-const version of the indexing operator [].
    *
