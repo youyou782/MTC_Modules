@@ -5,12 +5,15 @@
 void FantasyDragon::Eat(std::list<Food> &food)
 {
    if(!food.empty()){
-        for(auto i = food.begin(); i != food.end(); i++){
+        for(auto i = food.begin(); i != food.end();){
             if(i->type == People || i->type == PeopleFood){
                 std::cout << "Fantasy dragon ate: " << i->name << std::endl;
                 i = food.erase(i);
                 size_ += 1;
                 //break;
+            }
+            else{
+                i++;
             }
         }
    } 

@@ -4,12 +4,15 @@
 void MagicDragon::Eat(std::list<Food> &food)
 {
    if(!food.empty()){
-        for(auto i = food.begin(); i != food.end(); i++){
+        for(auto i = food.begin(); i != food.end();){
             if(i->type == Herbs){
                 std::cout << "Magic dragon ate: " << i->name << std::endl;
                 i = food.erase(i);
                 size_ += 1;
                 //break;
+            }
+            else{
+                i++;
             }
         }
    } 
