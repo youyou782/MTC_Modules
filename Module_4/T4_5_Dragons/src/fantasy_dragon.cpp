@@ -10,7 +10,7 @@ void FantasyDragon::Eat(std::list<Food> &food)
                 std::cout << "Fantasy dragon ate: " << i->name << std::endl;
                 i = food.erase(i);
                 size_ += 1;
-                break;
+                //break;
             }
         }
    } 
@@ -24,7 +24,7 @@ void FantasyDragon::Hoard(std::list<Treasure> &treasure)
                 std::cout << "Fantasy dragon received: " << i->name << std::endl;
                 treasure_.push_back(*i);
                 i = treasure.erase(i);
-                break;
+                //break;
             }
         }
     }
