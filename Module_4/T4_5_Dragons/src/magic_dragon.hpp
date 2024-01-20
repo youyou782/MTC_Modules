@@ -38,3 +38,18 @@ Magic dragon received: <Treasure's name>\n
  *  The treasures should be received in the order from the list's beginning to
 end.
  */
+
+class MagicDragon : public Dragon{
+
+public:
+
+virtual ~MagicDragon(){}
+
+MagicDragon(const std::string& name, size_t age, size_t size) : Dragon(name, age, size){}
+
+virtual void Eat(std::list<Food>& food);
+
+virtual void Hoard(std::list<Treasure>& treasure);
+
+};
+

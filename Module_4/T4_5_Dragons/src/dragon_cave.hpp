@@ -1,5 +1,7 @@
 #pragma once
 
+#include <list>
+#include "dragon.hpp"
 /**
  * \brief The DragonCave class is a storage class for Dragons.
  *
@@ -33,8 +35,27 @@
  * does nothing. Note that the function only erases the pointer from the list,
  * but DOES NOT delete the Dragon object. The function returns nothing.
  */
+class DragonCave{
+    public:
+
+    DragonCave(const DragonCave&) = delete;
+    DragonCave& operator=(const DragonCave&) = delete;
+    DragonCave(){}
+    ~DragonCave();
+
+    const std::list<Dragon*>& GetDragons() const;
+
+    void Accommodate(Dragon* dragon);
+
+    void Evict(const std::string& name);
+
+    private:
+
+    std::list<Dragon*> dragon_;
 
 
+
+};
 
 /**
  * \brief TODO: operator << overloads the << stream operator for printing
@@ -62,3 +83,5 @@
  * \return The output stream given as one of the arguments.
  *
  */
+
+std::ostream& operator<<(std::ostream& os, const DragonCave& cave);

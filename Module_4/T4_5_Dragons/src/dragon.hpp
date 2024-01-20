@@ -74,8 +74,33 @@ struct Food
  * to a list of Treasure objects as a parameter.
  *
  */
+class Dragon{
 
+public:
+Dragon(const std::string& name, size_t age, size_t size) 
+: name_(name), age_(age), size_(size){}
 
+virtual ~Dragon(){}
+const std::string& GetName() const;
+
+size_t GetAge() const;
+
+size_t GetSize() const;
+
+const std::list<Treasure>& GetTreasures() const;
+
+virtual void Eat(std::list<Food>& food) = 0;
+
+virtual void Hoard(std::list<Treasure>& treasure) = 0;
+
+protected:
+
+std::string name_;
+size_t age_;
+size_t size_;
+std::list<Treasure> treasure_;
+
+};
 /**
  * \brief TODO: operator << overloads the << stream operator for printing
  * Dragons to a desired ostream.
@@ -100,3 +125,4 @@ struct Food
  * \return The output stream given as one of the arguments.
  *
  */
+std::ostream& operator<<(std::ostream& os, const Dragon& cave);
