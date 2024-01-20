@@ -31,12 +31,14 @@ void DragonCave::Evict(const std::string &name)
 
 std::ostream& operator<<(std::ostream& os, const DragonCave& cave){
 
-    os << "DragonCave dwellers:" << std::endl;
+    os << "DragonCave dwellers:" << std::endl << std::endl;
 
-    for(auto i : cave.GetDragons()){
+    for(auto i = cave.GetDragons().cbegin(); i != cave.GetDragons().cend(); i++){
 
-        os << *i << std::endl;
-
+        os << **i ;
+        if( i++ != cave.GetDragons().end()){
+            os << std::endl;
+        }
     }
     return os;
 }
