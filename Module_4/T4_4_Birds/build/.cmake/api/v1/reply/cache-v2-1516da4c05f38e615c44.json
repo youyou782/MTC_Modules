@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/youyou782/mtc/Module_4/T4_5_Dragons/build"
+			"value" : "/home/youyou782/mtc/Module_4/T4_4_Birds/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -155,10 +155,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "FILEPATH",
 			"value" : "/usr/bin/g++"
 		},
 		{
@@ -283,10 +283,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "C compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "FILEPATH",
 			"value" : "/usr/bin/gcc"
 		},
 		{
@@ -591,7 +591,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/youyou782/mtc/Module_4/T4_5_Dragons"
+			"value" : "/home/youyou782/mtc/Module_4/T4_4_Birds"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -835,7 +835,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "dragons"
+			"value" : "birds"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION",
@@ -1178,7 +1178,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "dragons_BINARY_DIR",
+			"name" : "birds_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1187,10 +1187,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/youyou782/mtc/Module_4/T4_5_Dragons/build"
+			"value" : "/home/youyou782/mtc/Module_4/T4_4_Birds/build"
 		},
 		{
-			"name" : "dragons_IS_TOP_LEVEL",
+			"name" : "birds_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1202,7 +1202,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "dragons_SOURCE_DIR",
+			"name" : "birds_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1211,7 +1211,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/youyou782/mtc/Module_4/T4_5_Dragons"
+			"value" : "/home/youyou782/mtc/Module_4/T4_4_Birds"
 		}
 	],
 	"kind" : "cache",
