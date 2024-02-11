@@ -1,3 +1,0 @@
-/home/youyou782/mtc/build/CMakeFiles/first_task.dir
-/home/youyou782/mtc/build/CMakeFiles/edit_cache.dir
-/home/youyou782/mtc/build/CMakeFiles/rebuild_cache.dir
