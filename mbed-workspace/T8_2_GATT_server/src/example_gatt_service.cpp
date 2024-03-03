@@ -103,15 +103,31 @@ void CExampleGattService::onDataWrittenHandler(GattCharacteristic *characteristi
 
 	if (characteristic_index == _characteristic_led_index) {
 		size_t copy_size = fmin(size, sizeof(_led_value));
-		_led_value = 0;
-		
+		if(copy_size > size){
+            _led_value = 0;
+        }else{
+            _led_value = *data;
+        }
 		std::cout << "LED value: " << int(_led_value) << std::endl;
+        //chang the state of led2
+        if(*data % 2){
+            _led = 0;
+        }
+        else{
+            _led = 1;
+        }
 	}
 	if (characteristic_index == _characteristic_dummy_config_index) {
 		size_t copy_size = fmin(size, sizeof(_dummy_config));
-		_dummy_config = 0;
-		
+		if(copy_size > size){
+            _dummy_config = 0;
+        }else{
+            _dummy_config = *reinterpret_cast<const uint16_t *>(data);
+        }
+
+        //output the new value
 		std::cout << "DummyConfig value: " << _dummy_config << std::endl;
+
 	}
 	if (characteristic_index == _characteristic_tick_count_index) {
 		std::cout << "TickCount modified -- ERROR--" << std::endl;
