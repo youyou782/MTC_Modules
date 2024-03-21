@@ -16,6 +16,12 @@ CImmediateAlertService::CImmediateAlertService(PinName led_pin)
 	&_alert_level_value /*= nullptr*/,
 	sizeof(_alert_level_value) /*= 0*/) && "error adding characteristic");
 
+    for( auto i: _characteristics){
+        i->setSecurityRequirements(ble::att_security_requirement_t::UNAUTHENTICATED,
+                                    ble::att_security_requirement_t::UNAUTHENTICATED,
+                                    ble::att_security_requirement_t::UNAUTHENTICATED);
+    }
+
 	// 3. create the service with UUID GattService::UUID_IMMEDIATE_ALERT_SERVICE
 	//    assert that the service is successfully created
     assert(!(this->CGattService::createService(GattService::UUID_IMMEDIATE_ALERT_SERVICE)) && "error creating service");

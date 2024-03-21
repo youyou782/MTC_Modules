@@ -73,10 +73,16 @@ CAlertNotificationService::CAlertNotificationService(PinName button_pin)
                             &_alert_status,
                             GattCharacteristic::BLE_GATT_CHAR_PROPERTIES_WRITE,
                             nullptr) && "add service 5 fail");
+
+    for( auto i: _characteristics){
+        i->setSecurityRequirements(ble::att_security_requirement_t::UNAUTHENTICATED,
+                                    ble::att_security_requirement_t::UNAUTHENTICATED,
+                                    ble::att_security_requirement_t::UNAUTHENTICATED);
+    }
 	// 3. create the service with UUID GattService::UUID_ALERT_NOTIFICATION_SERVICE
     assert(!(this->CGattService::createService(GattService::UUID_ALERT_NOTIFICATION_SERVICE)) && "service creation failed");	
 	// 4. configure Falling edge ISR function for the button
-	_button.rise(mbed::callback(this, &CAlertNotificationService::buttonPressedHandler));
+	_button.fall(mbed::callback(this, &CAlertNotificationService::buttonPressedHandler));
 }
 
 CAlertNotificationService::~CAlertNotificationService() {}

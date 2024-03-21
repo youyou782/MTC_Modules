@@ -13,7 +13,9 @@ void CGap::toggleLED() {
 	// TODO:: Implement this functions
 	_led = !_led;
 }
+ 
 
+ 
 void CGap::updateAdvertisementData() {
 	// We do not need to update advertisement data
 	std::cout << "Advertisement data updated!" << std::endl;
