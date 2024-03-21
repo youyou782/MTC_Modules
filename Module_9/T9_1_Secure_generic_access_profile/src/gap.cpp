@@ -4,6 +4,11 @@
 
 #include "ble_utils.h"
 
+// TODO: Copy your solution from Module 8.
+// Note: onBLEInitCompleteHandler member is virtual now.
+// Note: You can get human readable strings of ble_error_t type returns values
+// using bleErrorToString function declared in ble_utils.h
+
 void CGap::toggleLED() {
 	// TODO:: Implement this functions
         _led = !_led;
@@ -31,7 +36,8 @@ void CGap::onBLEInitCompleteHandler(BLE::InitializationCompleteCallbackContext *
 		// print the own Bluetooth address using
 		// printBluetoothAddress utility function defined in ble_utils.h
 		// note that there are 3 overloads of that function.
-        std::cout << printBluetoothAddress(addrType, address) << std::endl;
+
+        std::cout << bluetoothAddressToString(addrType, address) << std::endl;
 		
 	}
 	// 3. call _on_ble_init_callback member if it is not nullptr
@@ -129,18 +135,17 @@ void CGap::startAdvertising() {
 }
 
 void CGap::onConnectionComplete(const ble::ConnectionCompleteEvent &event) {
-
+	// TODO:: Implement this functions
+    //set supervison time
     ble::connection_handle_t connectionHandle = event.getConnectionHandle();
 
     // ble::ConnectionParameters para;
     ble_error_t error = _ble.gap().updateConnectionParameters(connectionHandle, 
                                         ble::conn_interval_t(50), 
                                         ble::conn_interval_t(100), 
-                                        ble::slave_latency_t(10), 
+                                        ble::slave_latency_t::min(), 
                                         ble::supervision_timeout_t(3000));
     std::cout << "update Conn Para " << ble::BLE::errorToString(error) << std::endl;
-
-	// TODO:: Implement this functions
 	// keep the LED on
 	if(_led_event_id){
         _event_queue.cancel(_led_event_id);
@@ -151,10 +156,7 @@ void CGap::onConnectionComplete(const ble::ConnectionCompleteEvent &event) {
 }
 void CGap::onDisconnectionComplete(const ble::DisconnectionCompleteEvent &event) {
 	// TODO:: Implement this functions
-    ble::disconnection_reason_t reason = event.getReason();
-    std::cout << "Disconnection code :" <<int(reason.value()) << std::endl;
-
-
+	
 	std::cout << "Device is disconnected" << std::endl;
     startAdvertising();
 }

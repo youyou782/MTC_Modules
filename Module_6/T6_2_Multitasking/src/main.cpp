@@ -79,6 +79,8 @@ void task2_proc(){
 }
 
 
+PwmOut led(LED1);
+PwmOut led2(LED2);
 
 int main()
 {
@@ -86,37 +88,18 @@ int main()
     // the following must always present in main files
     nrf52_disable_approtect();
     ///////////////////////////////////////////////////////////
-
-    /*---------------------------------------------------------*/
-    // Start your implementation below
-    
-    // 1. create two threads with different priorities. 
-    // the threads are created in suspended state
-    Thread thread1(osPriorityNormal);
-    Thread thread2(osPriorityAboveNormal);
-    
-
-    // 2. start the threads, and assign their procedures (functions)
-    thread1.start(callback(task1_proc));
-    thread2.start(callback(task2_proc));
-    
-    
-    // 3. wait for threads to terminate (if they ever terminate)
-    thread1.join();
-    thread2.join();
-    
-
-    // the following code is just a placeholder. You may remove it if you find it fit.
-    //---------------BEGIN PLACE HOLDER-------------------------/
-    // DigitalOut led(LED3);
-    // while (true) {
-    //     led = !led;
-    //     ThisThread::sleep_for(BLINKING_RATE);
-    // }
-    //---------------END PLACE HOLDER-------------------------/
-    
-   return 1;
-
-
-   
+    // specify period first
+    // led.period(100000.0f);      // 4 second period
+    // led.write(0.90f);      // 50% duty cycle, relative to period
+    //led = 0.5f;          // shorthand for led.write()
+    led2.period(4.0f);  // 4 second period
+    led2.pulsewidth(2); // 2 second pulse (on)
+    //led.pulsewidth(2);   // alternative to led.write, set duty cycle time in seconds
+    while (1);
 }
+
+
+
+
+
+

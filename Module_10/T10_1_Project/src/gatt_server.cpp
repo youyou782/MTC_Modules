@@ -8,14 +8,13 @@ CGattServer::CGattServer() {
 	// TODO:: Implement this functions
 	// 1. initially started must be false
     _started = false;
-	// assert(!_started && " error, Gattserver already started");
+	
 }
 
 CGattServer::~CGattServer() {
 	// TODO:: Implement this functions
-
-	// Note that explicitly calling std::list::clear function destroys all of its elements.
     _services.clear();
+	// Note that explicitly calling std::list::clear function destroys all of its elements.
 	// This ensures that the services are destroyed properly since
 	// their reference counts decrements to 1 (if the application is designed properly).
 
@@ -27,11 +26,10 @@ bool CGattServer::addService(CGattService& service) {
 	// 1. Check whether the server has started. If it has been started, we do not want to
 	//    add new services when the server is running since it requires registering them with the
 	//    system's GattServer instance
-    if(_started){
+	if(_started){
         std::cout << "server already started, addService failed" << std::endl;
         return false;
     }
-	
 	// 2. Check whether the service is created by using its bool() operator
 	//    i. if not, return false since we do not want to add not created services
 	//    ii. if it is, push it to the _services list and return true
@@ -39,7 +37,7 @@ bool CGattServer::addService(CGattService& service) {
         _services.push_back(&service);
         return true;
     }
-	
+
 	return false;
 }
 
@@ -52,9 +50,29 @@ void CGattServer::startServer(ble::BLE& ble) {
         i->registerService(ble);
         // std::cout << "SSService registered!" << std::endl;
     }
+
 	// 2. Register this object as the system's GattServer handler using GattServer::setEventHandler function
     ble.gattServer().setEventHandler(this);
-    _started = true;
+    _started = true;	
+}
+
+void CGattServer::onConnected(void) {
+	// TODO: implement this function
+	// 1. Iterate over the _services
+	// 2. call CGattService::onConnected function
+    for(auto &service : _services){
+        service->onConnected();
+    }
+	
+}
+
+void CGattServer::onDisconnected(void) {
+	// TODO: implement this function
+	// 1. Iterate over the _services
+	// 2. call CGattService::onDisconnected function
+    for(auto &service : _services){
+        service->onDisconnected();
+    }
 	
 }
 
@@ -83,6 +101,7 @@ void CGattServer::onDataWritten(const GattWriteCallbackParams& e) {
 	//         b. Call CGattService::onDataWrittenHandler function with the required parameters
 	//         c. Stop iterating over services
 	//    iv. otherwise, continue iterating
+
     for(auto &service : _services){
         characteristic = service->getCharacteristicWithValueHandle(value_handle);
         if(characteristic){
@@ -92,7 +111,7 @@ void CGattServer::onDataWritten(const GattWriteCallbackParams& e) {
             break;
         }
     }
-	
+
 	if (characteristic == nullptr) {
 		std::cout << "\tThe characteristic cannot be found" << std::endl;
 	}
@@ -105,7 +124,6 @@ void CGattServer::onDataRead(const GattReadCallbackParams& e) {
 	const GattAttribute::Handle_t& value_handle = e.handle;
 	std::cout << "onDataRead() using Conn. Handle " << e.connHandle << " for Att. Handle " << value_handle
 			  << std::endl;
-    // std::cout << e.data << std::endl;
 	// 1. Try to find the characteristic within the services that has the value_handle
 	//    i. Iterate over the _services
 	//    ii. call CGattService::getCharacteristicWithValueHandle
@@ -128,10 +146,9 @@ void CGattServer::onDataRead(const GattReadCallbackParams& e) {
             break;
         }
     }
-		
 
 	if (characteristic == nullptr) {
-		std::cout << "\tThe characteristic cannot be found && no implementation for descriptors' handle " << std::endl;
+		std::cout << "\tThe characteristic cannot be found" << std::endl;
 	}
 }
 
@@ -153,7 +170,6 @@ void CGattServer::onUpdatesEnabled(const GattUpdatesEnabledCallbackParams& param
 	//              `Characteristic with value handle "<user description str>"`
 	//              Note surrounding " character of the name (exclude ` characters)
 	//            - Otherwise, do not print anything
-
     for(auto &service : _services){
         characteristic = service->getCharacteristicWithValueHandle(value_handle);
         if(characteristic){
@@ -165,7 +181,7 @@ void CGattServer::onUpdatesEnabled(const GattUpdatesEnabledCallbackParams& param
             break;
         }
     }
-	
+
 	if (characteristic == nullptr) {
 		std::cout << "\tThe characteristic cannot be found" << std::endl;
 	}
@@ -189,7 +205,7 @@ void CGattServer::onUpdatesDisabled(const GattUpdatesDisabledCallbackParams& par
 	//              `Characteristic with value handle "<user description str>"`
 	//              Note surrounding " character of the name (exclude ` characters)
 	//            - Otherwise, do not print anything
-	
+
     for(auto &service : _services){
         characteristic = service->getCharacteristicWithValueHandle(value_handle);
         if(characteristic){
@@ -236,7 +252,7 @@ void CGattServer::onConfirmationReceived(const GattConfirmationReceivedCallbackP
             break;
         }
     }
-	
+
 	if (characteristic == nullptr) {
 		std::cout << "\tThe characteristic cannot be found" << std::endl;
 	}

@@ -4,9 +4,14 @@
 
 #include "ble_utils.h"
 
+// TODO: Copy your solution from Module 8.
+// Note: onBLEInitCompleteHandler member is virtual now.
+// Note: You can get human readable strings of ble_error_t type returns values
+// using bleErrorToString function declared in ble_utils.h
+
 void CGap::toggleLED() {
 	// TODO:: Implement this functions
-        _led = !_led;
+	_led = !_led;
 }
 
 void CGap::updateAdvertisementData() {
@@ -16,32 +21,24 @@ void CGap::updateAdvertisementData() {
 void CGap::onBLEInitCompleteHandler(BLE::InitializationCompleteCallbackContext *context) {
 	// TODO:: Implement this functions
 	// 1. check for the initialization errors using error member of context
-    auto error = context->error;
-    if(error != BLE_ERROR_NONE){
-        std::cout << ble::BLE::errorToString(error) << std::endl;
-		return;
-    }
+	
 	// The BLE interface can be accessed now.
 	std::cout << "BLE init completed" << std::endl;
 	// 2. get and print the device address
 	ble::own_address_type_t addrType;
 	ble::address_t address;
-	error = context->ble.gap().getAddress(addrType, address);
+	auto error = context->ble.gap().getAddress(addrType, address);
+	std::cout << bleErrorToString(error, "GAP::getAddress()") << std::endl;
 	if (error == BLE_ERROR_NONE) {
 		// print the own Bluetooth address using
-		// printBluetoothAddress utility function defined in ble_utils.h
+		// bluetoothAddressToString utility function defined in ble_utils.h
 		// note that there are 3 overloads of that function.
-        std::cout << printBluetoothAddress(addrType, address) << std::endl;
 		
 	}
 	// 3. call _on_ble_init_callback member if it is not nullptr
-	if(!_on_ble_init_callback){
-        // return;
-    }else{
-        _on_ble_init_callback(_ble);
-    }
+	
 	// 4. start advertising
-	startAdvertising();
+	
 }
 
 void CGap::scheduleBLEEventsToProcess(BLE::OnEventsToProcessCallbackContext *context) {
@@ -55,7 +52,9 @@ CGap::CGap(ble::BLE &ble,
 		   EventQueue &event_queue,
 		   const std::string &device_name,
 		   PinName led_pin,
-		   const mbed::Callback<void(ble::BLE &)> &on_ble_init_callback):     
+		   const mbed::Callback<void(ble::BLE &)> &on_ble_init_callback,
+           const mbed::Callback<void(void)> &on_connected,
+           const mbed::Callback<void(void)> &on_disconnected):     
     _ble(ble),
     _event_queue(event_queue),
     _device_name(device_name),
@@ -129,37 +128,42 @@ void CGap::startAdvertising() {
 }
 
 void CGap::onConnectionComplete(const ble::ConnectionCompleteEvent &event) {
-
-    ble::connection_handle_t connectionHandle = event.getConnectionHandle();
-
-    // ble::ConnectionParameters para;
-    ble_error_t error = _ble.gap().updateConnectionParameters(connectionHandle, 
-                                        ble::conn_interval_t(50), 
-                                        ble::conn_interval_t(100), 
-                                        ble::slave_latency_t(10), 
-                                        ble::supervision_timeout_t(3000));
-    std::cout << "update Conn Para " << ble::BLE::errorToString(error) << std::endl;
-
 	// TODO:: Implement this functions
-	// keep the LED on
+	// 1. if on_connected callback is not nullptr, call it
+	// 2. keep the LED on
+    if(_on_connected){
+        _on_connected();
+    }
+	
+	std::cout << "Device is connected" << std::endl;
 	if(_led_event_id){
         _event_queue.cancel(_led_event_id);
         _led = 0;
         _led_event_id = 0;
     }
-	std::cout << "Device is connected" << std::endl;
 }
 void CGap::onDisconnectionComplete(const ble::DisconnectionCompleteEvent &event) {
 	// TODO:: Implement this functions
-    ble::disconnection_reason_t reason = event.getReason();
-    std::cout << "Disconnection code :" <<int(reason.value()) << std::endl;
-
-
+	// 1. if on_disconnected is not nullptr, call it
+	// 2. start advertising
+	if(_on_disconnected){
+        _on_disconnected();
+    }
 	std::cout << "Device is disconnected" << std::endl;
     startAdvertising();
 }
 
 void CGap::setOnBLEInitCompleteCallback(const mbed::Callback<void(ble::BLE &)> &callback) {
 	// TODO:: Implement this functions
-	    _on_ble_init_callback = callback;
+	_on_ble_init_callback = callback;
+}
+
+void CGap::setOnConnectedCallback(const mbed::Callback<void(void)> &callback) {
+	// TODO:: Implement this functions
+	_on_connected = callback;
+}
+
+void CGap::setOnDisconnectedCallback(const mbed::Callback<void(void)> &callback) {
+	// TODO:: Implement this functions
+	_on_disconnected = callback;
 }
