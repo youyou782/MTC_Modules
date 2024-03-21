@@ -1,8 +1,0 @@
-.mbedbuild
-BUILD/
-cmake_build/
-mbed-os/
-cmake_build/
-mbed-os.lib
-
-!src/
